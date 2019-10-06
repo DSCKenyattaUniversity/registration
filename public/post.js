@@ -46,9 +46,9 @@ firebase.initializeApp(firebaseConfig);
       })
     
       //Hide Alert Message After Seven Seconds(6)
-      setTimeout(function() {
-        document.querySelector('.alert').style.display = 'none';
-      }, 7000);
+      // setTimeout(function() {
+      //   document.querySelector('.alert').style.display = 'none';
+      // }, 7000);
     
       //Form Reset After Submission
       document.getElementById('addform').reset();
