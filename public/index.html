@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DSC MEMBERSHIP</title>
+    <meta name="description" content="church website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./images/logo.png">
+    <!--bootstrap 3 cdn-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- sweet alert -->
+    <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <!-- links to styles sheets -->
+    <link rel="stylesheet" href="styles.css">
+    <!--font awesome-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!--google fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css'>
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+</head>
+<body>
+    <div class="animated zoomIn form">
+        <form class="col-md-12" action="" id="addform"> 
+            <div class="form-header">
+                <img src="./images/logo.png" alt="logo" class="register-logo">
+                <h1>DSC Kenyatta University</h1>
+            </div>     
+            <input class="animated zoomIn" type="text" name="username" id="username" placeholder="Full Name" required> <br>
+            <input class="animated zoomIn" type="email" name="email" id="email" placeholder="Email" required> <br>
+            <input class="animated zoomIn" type="tel" name="phone" id="phone" placeholder="Phone Number" required> <br>
+            <input class="animated zoomIn" type="text" name="course" id="course" placeholder="Course of Study" required> <br>
+            <select name="year" id="year"  class="animated zoomIn select-css" required>
+                <option value="" disabled selected>Select Year of Study</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select><br>
+            <div class="interests">
+                <label>Select your Interests</label> <br>
+                <label class="checkbox-inline"><input type="checkbox" id="web" value="WEB">Web Development</label> <br>
+                <label class="checkbox-inline"><input type="checkbox" id="mobile" value="MOBILE">Mobile / Android</label><br>
+                <label class="checkbox-inline"><input type="checkbox" id="iot" value="IOT">IOT</label><br>
+                <label class="checkbox-inline"><input type="checkbox" id="cloud" value="CLOUD">Cloud</label><br>
+                <label class="checkbox-inline"><input type="checkbox" id="ml" value="ML">Machine Learning</label><br>
+            </div>
+            <button class=" submit-btn animated zoomIn" type="submit">BECOME A MEMBER</button>
+        </form>
+    </div>
+
+    <script src="post.js" async defer></script>
+
+</body>
+</html>
