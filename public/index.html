@@ -46,12 +46,15 @@
                 <option value="6">6</option>
             </select><br>
             <div class="interests">
+                <p>*Hold down the Ctrl button and select multiple options.</p> <br>
                 <label>Select your Interests</label> <br>
-                <label class="checkbox-inline"><input type="checkbox" id="web" value="WEB">Web Development</label> <br>
-                <label class="checkbox-inline"><input type="checkbox" id="mobile" value="MOBILE">Mobile / Android</label><br>
-                <label class="checkbox-inline"><input type="checkbox" id="iot" value="IOT">IOT</label><br>
-                <label class="checkbox-inline"><input type="checkbox" id="cloud" value="CLOUD">Cloud</label><br>
-                <label class="checkbox-inline"><input type="checkbox" id="ml" value="ML">Machine Learning</label><br>
+                <select name="interests" id="interests" class="animated zoomIn multiple-select" multiple>
+                    <option value="WEB">Web Development</option>
+                    <option value="MOBILE">Mobile / Android</option>
+                    <option value="CLOUD">Cloud</option>
+                    <option value="IOT">IOT</option>
+                    <option value="MACHINE_LEARNING">Machine Learning</option>
+                </select>
             </div>
             <button class=" submit-btn animated zoomIn" type="submit">BECOME A MEMBER</button>
         </form>

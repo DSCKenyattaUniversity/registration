@@ -63,9 +63,8 @@ body {
     border-radius: 4px;
     box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
 }
-.form .checkbox-inline {
-    box-shadow: none;
-    float: left;
+.interests p {
+    color: #DB4437;
 }
 .form .submit-btn {
     background: #4285F4;
@@ -133,7 +132,17 @@ button:focus {
 .select-css option {
     font-weight:normal;
 }
-
+.multiple-select {
+    border: none;
+    padding: 5px;
+    width: 100%;
+    min-height: 250px;
+}
+.multiple-select option {
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
+}
 /* media queries */
 @media only screen and (max-device-width: 736px){
     .form {

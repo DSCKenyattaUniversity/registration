@@ -29,18 +29,7 @@ firebase.initializeApp(firebaseConfig);
       let phone = document.querySelector('#phone').value;
       let course = document.querySelector('#course').value;
       let year = document.querySelector('#year').value;
-      // push the select into ana array
-      const interests = []
-      let web = document.querySelector('#web').value;
-      let mobile = document.querySelector('#mobile').value;
-      let iot = document.querySelector('#iot').value;
-      let cloud = document.querySelector('#cloud').value;
-      let ml = document.querySelector('#ml').value;
-      interests.push(web);
-      interests.push(mobile);
-      interests.push(iot);
-      interests.push(cloud);
-      interests.push(ml);
+      let interests = document.querySelector('#interests').value;;
       
       //send message values
       sendMessage(username, email, phone, course, year, interests);
@@ -48,7 +37,7 @@ firebase.initializeApp(firebaseConfig);
       //Show Alert Message
       // document.querySelector('.alert').style.display = 'block';
       Swal.fire({
-          title: `Wooaaah... Welcome ${username}`,
+          title: `Wooaaah... Welcome 😉${username} 😍`,
           type: 'success',
           // style:'font-size: 1.6rem !important;',
           customClass: {
