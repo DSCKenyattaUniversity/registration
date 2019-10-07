@@ -29,7 +29,11 @@ firebase.initializeApp(firebaseConfig);
       let phone = document.querySelector('#phone').value;
       let course = document.querySelector('#course').value;
       let year = document.querySelector('#year').value;
-      let interests = document.querySelector('#interests').value;;
+      // let interests = document.querySelector('#interests').value;
+      const interests = [];
+      $.each($(".interests option:selected"), function() {
+        interests.push($(this).attr("id"));
+      });
       
       //send message values
       sendMessage(username, email, phone, course, year, interests);
